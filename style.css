@@ -1,0 +1,229 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Fonts & Colors */
+body {
+font-family: Arial, sans-serif;
+color: white;
+background-color: #390094;
+}
+
+h1, h2 {
+font-family: 'Georgia', serif;
+}
+
+/* Header & Navigation */
+.header {
+width: 100%;
+background: linear-gradient(135deg, #1e3a8a, #6d28d9, #d97706);
+padding: 1rem;
+text-align: center;
+}
+
+
+.nav a {
+color: white;
+margin: 0 15px;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.nav a:hover {
+color: rgb(255, 0, 221);
+}
+
+.download-btn {
+background: gold;
+color: black;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+text-decoration: none;
+}
+
+
+
+/* Hero Section */
+.hero {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 70vh;
+width: 100%;
+background: linear-gradient(to bottom, #170cb1, #8901d8);
+}
+
+
+.hero h1 {
+font-size: 3.5rem;
+margin-bottom: 0.5rem;
+margin-top: -115px;
+z-index: 1;
+}
+
+.hero p {
+font-size: 1.2rem;
+z-index: 1;
+}
+
+
+.coin .hero h1, .hero p {
+margin-bottom: 200px;
+}
+
+.coin {
+height: 50vh;
+width: 50vh;
+
+}
+
+
+
+/* Sections */
+section {
+padding: 2rem 1rem;
+max-width: 100%;
+margin: 0 auto;
+}
+
+.about, .white-paper {
+background: linear-gradient(135deg, #1e3a8a, #6d28d9, #d97706);
+border-radius: 8px;
+width: 100%;
+padding: 2rem;
+margin: 2rem 0;
+}
+
+
+/* Contact Section */
+
+.contactz { 
+margin-top: -20px;
+margin-left: 45%;
+}
+
+
+.contact a {
+color: #9ca3af;
+}
+
+.contact a:hover {
+color: gold;
+}
+
+.a1{
+color: #1ccaff;
+text-decoration: none;
+}
+
+.underline1{
+height: 5px;
+width: 180px;
+border: none;
+border-radius: 50%;
+background: linear-gradient(135deg, #799dff, #6d28d9, #d97706);
+}
+
+.underline2{
+height: 5px;
+width: 125px;
+border: none;
+border-radius: 50%;
+background: linear-gradient(135deg, #799dff, #6d28d9, #d97706);
+}
+
+.underline3{
+height: 5px;
+width: 100px;
+margin-left: 45%;    
+border: none;
+border-radius: 50%;
+background: linear-gradient(135deg, #799dff, #6d28d9, #d97706);
+}
+
+.pi{
+margin-top: 10px;
+}
+
+.social-links {
+display: flex;
+gap: 1rem;
+justify-content: center;
+margin-top: 2rem;
+}
+
+.button {
+padding: 0.5rem 1rem;
+border-radius: 8px;
+text-decoration: none;
+color: white;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+
+/* Telegram Button */
+.telegram {
+background-color: #9300b1;
+}
+
+.telegram:hover {
+background-color: #0078b5;
+}
+
+/* X Button */
+.x  {
+background-color: #9300b1;
+}
+
+.x:hover {
+background-color: #0d8bce;
+}
+
+.Email {
+background-color: #9300b1;
+}
+
+.Email:hover {
+background-color: #0d8bce;
+}
+
+
+/* Footer */
+.footer {
+text-align: center;
+width: 100%;
+padding: 1rem;
+background: linear-gradient(to bottom, #060153, #200033);
+font-size: 0.9rem;
+color: #9ca3af;
+}
+
+/* initial coin style */
+.coin {
+width: 50vh;
+position: relative;
+/* Needed for relative animation movement */
+animation: randomMovement 5s ease-in-out infinite;
+/* infinite loop every 5 seconds */
+}
+
+/* Ramdom Movemnt Keyframes */
+@keyframes RandomMovement {
+0%  { transform:
+translate(0, 0); }
+20% { transform:
+translate(200px, -100px); }
+50% { transform: 
+translate(-150px, 200px); }
+75%  { transform: 
+translate(100px, -200px); }
+100% { transform: 
+translate(0, 0); }
+}
+
